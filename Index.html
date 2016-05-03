@@ -14,14 +14,19 @@
 <div data-role="page" id="home">
 
 	<div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
 		<h1>Share QR</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>Hello world!</p>		
+	<div data-role="content">
+    <!--ADDING A LIST-->
+        <ul data-role="listview">
+            <li><a href="#qrcode">business.ucdenver.edu</a> </li>
+            <li><a href="#qrcode">dawngregg.com</a> </li>
+        </ul>	
 	</div><!-- /content -->
 
-	<div data-role="footer" class="ui-bar" data-theme="b">
+	<div data-role="footer" class="ui-bar" data-theme="b" data-position="fixed" data-id="footer">
 		<h4>Page Footer</h4>
         <a href="#about" data-icon="info">About</a>
 	</div><!-- /footer -->
@@ -35,6 +40,23 @@
 </div>
 <div data-role="content">
     <p>Share your favorite URLs with other mobile phone users through QR codes.</p>
+    </div>
+    
+<div data-role="footer" class="ui-bar" data-theme="b" data-position="fixed" data-id="footer">
+    <a href="#about" data-icon="info">About</a>
+    </div> 
+</div>
+<!--END OF SECOND PAGE-->
+    
+<!--QR PAGE-->
+<div data-role="page" id="qrcode">
+<div data-role="header" data-theme="b" data-position="fixed">
+<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+<h1>QR Code</h1>
+<a href="#home" data-icon="arrow-1" data-rel="back">Back</a>
+</div>
+<div data-role="content">
+  
     </div>
     
 <div data-role="footer" class="ui-bar" data-theme="b" data-position="fixed" data-id="footer">
